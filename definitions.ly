@@ -3,10 +3,12 @@
 #(define option-movement-title-format "number-title")
 #(define option-print-all-bar-numbers #t)
 \include "ees.ly" %v2026.11.0
+\include "definitions_dynamics.ly"
 \include "ees_articulate.ly"
 
 
 tempoOWunder = \tempoMarkup "Recitativo"
+tempoWannBey = \tempoMarkup "Moderato"
 
 
 \include "notes/vl1.ly"

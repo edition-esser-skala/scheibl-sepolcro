@@ -4,27 +4,85 @@
 \include "score_settings/full-score.ly"
 
 \book {
+  % \bookpart {
+  %   \section "1" "Recitativo · O Wunder die kein Menſch"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #3
+  %     indent = 3\cm
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \incipitSoprano
+  %           \new Voice = "Soprano" { \dynamicUp \OWunderSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \OWunderSopranoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
+  %           % \transpose c c,
+  %           \OWunderOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \OWunderBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \section "1" "Recitativo · O Wunder die kein Menſch"
-    % \addTocEntry
-    \paper { indent = 3\cm }
+    \section "2" "Aria · Wann bey Tag ſich muß verſtekhen"
+    \addTocEntry
+    \paper {
+      top-system-spacing.basic-distance = #10
+      top-system-spacing.minimum-distance = #10
+      top-markup-spacing.basic-distance = #0
+      top-markup-spacing.minimum-distance = #0
+      markup-system-spacing.basic-distance = #10
+      markup-system-spacing.minimum-distance = #10
+      system-system-spacing.basic-distance = #17
+      system-system-spacing.minimum-distance = #17
+      systems-per-page = #3
+    }
     \score { %\articulate
       <<
-        \new ChoirStaff <<
+        \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+          \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \WannBeyViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \WannBeyViolinoII
+            }
+          >>
           \new Staff {
-            \incipitSoprano
-            \new Voice = "Soprano" { \dynamicUp \OWunderSoprano }
+            \set Staff.instrumentName = "vla"
+            \WannBeyViola
           }
-          \new Lyrics \lyricsto Soprano \OWunderSopranoLyrics
+        >>
+        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+          \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \WannBeySoprano }
+          }
+          \new Lyrics \lyricsto Soprano \WannBeySopranoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \OWunderOrgano
+            \WannBeyOrgano
           }
         >>
-        \new FiguredBass { \OWunderBassFigures }
+        \new FiguredBass { \WannBeyBassFigures }
       >>
       \layout { }
       \midi { \tempo 4 = 90 }
