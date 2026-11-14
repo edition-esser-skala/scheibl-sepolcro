@@ -6,24 +6,41 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "2" "Aria · Wann bey Tag ſich muß verſtekhen"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { system-count = #15 }
     \score {
       <<
-        \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \xxxViolinoI
-        }
+        \new Staff { \WannBeyViolinoI }
       >>
     }
   }
   \bookpart {
-    \section "2" "Second"
+    \section "4" "Aria · Ey ſo ſchlaff nach deinen Plagen"
     \addTocEntry
     \score {
       <<
-        \new Staff { \yyyViolinoI }
+        \new Staff { \EySoViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "6" "Aria · Neige dich zu meinen Bitten"
+    \addTocEntry
+    \paper { system-count = #15 }
+    \score {
+      <<
+        \new Staff { \NeigeDichViolinoI }
+      >>
+    }
+  }
+  \bookpart {
+    \section "8" "Chorus · Sey, ô Jeſu! Leib und Leben"
+    \addTocEntry
+    \paper { system-count = #7 }
+    \score {
+      <<
+        \new Staff { \SeyJesuViolinoI }
       >>
     }
   }
