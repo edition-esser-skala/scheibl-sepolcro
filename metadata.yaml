@@ -2,7 +2,7 @@ composer:
   last: Scheibl
   first: Johann Adam
 title: Oratorium ad Sanctum Sepulchrum
-subtitle:
+subtitle: O Wunder die kein Menſch
 genre: sepolcro
 scoring: S, A, T (solo), S, A, T, B (coro), 2 vl, vla, b, org
 ark: 68748/e1jas1
@@ -22,4 +22,3 @@ sources:
     date: ca. 1760
     url: https://db.klostermusiksammlungen.at/scores/4401
     license: public domain
-imslp:
