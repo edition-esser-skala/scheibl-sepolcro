@@ -215,3 +215,245 @@ WannBeyBassFigures = \figuremode {
   \bo <[4]>2 \bc <[3]>4 %85
   r2. %86 finis
 }
+
+DerTodtOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoDerTodt
+    g'1~
+    g~
+    g2 g
+    h,1
+    c2 a %5
+    a r4 b!
+    as2 e'~
+    e f4 d-!
+    b2 r4 es
+    as, b es2\fermata \bar "|." %10 finis
+  }
+}
+
+DerTodtBassFigures = \figuremode {
+  r1
+  <4 2 7\\>
+  r2 <8>
+  <6>1
+  r2 <6> %5
+  <6 5>1
+  <6 4 2>2 <6>
+  r <[_-]>
+  <7->4 <6 4>2.
+  r1 %10 finis
+}
+
+EySoOrgano = {
+  \relative c {
+    \clef bass
+    \twofourtime \key es \major \time 2/4 \tempoEySo
+    r8 es\fE es es
+    r es es es\p
+    r es es es\f
+    d4 r8 b
+    es4 g %5
+    as b
+    c d8 es
+    b b, c d
+    es4 d8 c
+    b b b b %10
+    b4 r8 b
+    b4 r8 d
+    es r g r
+    as f b b,
+    es r g\p r %15
+    as f b b,
+    es4 r
+    es8\f es es4
+    r8 es\pE es es
+    r es es es %20
+    r es es es
+    d4 r8 b
+    es4 g,
+    as b
+    c d8 es %25
+    b4 f'8 es
+    d4 r
+    r8 a a a
+    r b c d
+    es b r4 %30
+    r8 es d b
+    f'4 d8 b
+    es4 f8 f,
+    b4 a
+    b r %35
+    r8 g' es f
+    b,\f c d b
+    r b b b\p
+    r b c d\f
+    es4 f %40
+    b8 r d, r
+    es c f es
+    d r g\pE r
+    es c f f,
+    b4 r %45
+    b\fE r
+    r8 c\p c c
+    r c c c
+    c r c r
+    r f16 e f8 f, %50
+    r b b b
+    r b b b
+    b r b r
+    r es f g
+    as4 a %55
+    b4. a8
+    b4. a8
+    b4 b8 as
+    g! g g g
+    as4 r %60
+    f8 g as a
+    b8. as16 g8 es
+    as es r4
+    as8 as g es
+    d4 es8 c' %65
+    as4 b8 b,
+    es4 d
+    es d
+    es r8 c'
+    as f b b, %70
+    es4 r
+    as,\f b
+    c d8 es
+    b' b, b b
+    b4 r8 b %75
+    b4 r8 d
+    es r g r
+    as f b b,
+    es r g\p r
+    as f b b, %80
+    es4 r
+    es8\f es es4\fermataFine
+    c\p r
+    h g
+    r8 c es g %85
+    c4 b!8 g
+    f4 d
+    r8 es g b
+    es4 des
+    c e, %90
+    f d!
+    es! r
+    es8 es d d
+    cis4 r
+    r8 d d d %95
+    d4 r
+    d r8 fis
+    g4 r
+    r8 g, c cis
+    d2\fermata %100
+    g,4 r\fermata \markDaCapo \bar "||" %101 finis
+  }
+}
+
+EySoBassFigures = \figuremode {
+  r4. <6 4>8
+  r <[5 3]>4 <7 4 2>8
+  r <[8 3]>4.
+  <6> <7>8
+  \bo <[9 4]>8 \bc <[8 3]>4. %5
+  \bo <9 [7]>8 \bc <8 [6]> <7>4
+  <5>8 <6> <6 5>4
+  r2
+  <6>4 q8 <6!>
+  r2 %10
+  r4. <6 4>8
+  <[5 3]>4. <6 5[-]>8
+  r4 <6>
+  q <4>8 <3>
+  r2 %15
+  r
+  r
+  r
+  r4. <6 4>8
+  r <[5 3]>4 <7 4 2>8 %20
+  r <[8 3]>4.
+  <6>2
+  <4 9>8 <3 8> <6>4
+  \bo <9 [7]>8 \bc <8 [6]> <7>4
+  <5>8 <6> <6 5>4 %25
+  r <_!>8 <2>
+  <6>2
+  r8 <6 5>4.
+  r2
+  r %30
+  r8 <4! 2> \bo <[6]>4
+  <_!> \bc <[6]>
+  r <6 4>8 <[5] _!>
+  r4 \bo <[6]>
+  r2 %35
+  r4 <[6]>8 \bc <[_!]>
+  r2
+  r4. <7! 4 2>8
+  r <[8 3]>4.
+  r4 <8 6 [_!]>8 <7 5> %40
+  r4 <6>
+  r <_!>
+  <6>2
+  q4 <4>8 <_!>
+  r2 %45
+  r
+  r8 <7 _!>4.
+  r8 <[\t \t]>4.
+  <7 [_!]>8 <6- 4> <\t \t> <[5] _!>
+  r2 %50
+  r8 <7>4.
+  r2
+  <[7 5]>8 <6 4> <\t \t> <[5] 3>
+  r2
+  r4 <6 5> %55
+  r <6- 4>8 <\t \t>
+  r <[5 3]> <6- 4> <\t \t>
+  <6- 4> <5 3>4.
+  <6>4. <5->8
+  <[5]>2 %60
+  r4. <6 5>8
+  <4> <3> <[6]>4
+  r2
+  <2>4 <6>
+  <6 5>2 %65
+  q4 <4>8 <3>
+  r4 <6 5>
+  <[5] 3>8 <6 4> <6 5>4
+  r2
+  r4 <4>8 <3> %70
+  r2
+  \bo <[9 7]>8 \bc <[8 6]> <7>4
+  <5>8 <6> <6 5>4
+  r2
+  r4. <6 4>8 %75
+  <[5 3]>4. <6 5>8
+  r4 <6>
+  r2
+  r4 <6>
+  <[6]> <4>8 <3> %80
+  r2
+  r
+  r
+  <6>8 <5> <[7 _!]>4
+  r4. <7 _!>8 %85
+  r4. <6>8
+  <7>4 <6 5>
+  r4. <7>8
+  r4 <2>
+  <[7] _!> <6 [5]> %90
+  <4 9>8 <3 8> <6 5>4
+  <4 9>8 <3 8>4.
+  r4 <2>
+  <7 [_!]>2
+  r8 <_+>4. %95
+  r2
+  r4. <7>8
+  r2
+  r4 \bo <[7 _-]>8 <6! _!>
+  <5! 4>4 \bc <[\t _+]> %100
+  r2 %101 finis
+}
