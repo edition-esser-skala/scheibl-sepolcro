@@ -289,3 +289,40 @@ NeigeDichViolinoII = {
     R\fermata \markDaCapo \bar "||" %83 finis
   }
 }
+
+SeyJesuViolinoII = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \tempoSeyJesu
+    d8-!\fE r b'-! r c-! r a-! r
+    d4. c8 b d, d16( b') b( d,)
+    d4. c8 d f16( a,) b8-! r
+    r b'\p r b r b r b
+    r b r a r d,\f d16( b') b( d,) %5
+    d4. c8 d f16( a,) b8-! r
+    b' b b b a a a f
+    g g g g f a g e
+    r f\p r f r f r f
+    r f r e r f16(\f a) a,8 r %10
+    f'4 b2 a4
+    b c b4. a16 g
+    a4 f' g, e'
+    a,8 r f' r g r e r
+    a4. g8 f a, a16( f') f( a,) %15
+    a4. g8 f c'16( e,) f8 r
+    R1
+    r2 f16( d') d( c) c( b) b( a)
+    a4 r r2
+    r f16( des') des( c) c( b) b( a) %20
+    a4 f8\p es d!4 r
+    r g8 f e4 r
+    r d'8\f c d4 des
+    des4. c8 f,16( d') d( c) c( b) b( a)
+    \parOn b8-\parenthesize-! r b-! r c-! r \parOff a-\parenthesize-! r %25
+    d4. c16 b f4 es\trill
+    d8 d d16( b') b( d,) d4. c8
+    d f16( a,) b4 \tempoSeyJesuB r2
+    R1
+    d8-!\p r d-! r b4 r\fermata \bar "|." %30 finis
+  }
+}

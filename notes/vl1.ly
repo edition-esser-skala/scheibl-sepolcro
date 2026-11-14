@@ -289,3 +289,40 @@ NeigeDichViolinoI = {
     R\fermata \markDaCapo \bar "||" %83 finis
   }
 }
+
+SeyJesuViolinoI = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \tempoSeyJesu
+    b'8-!\fE r d-! r es-! r c-! r
+    f4. es8 d f,16( b) b( d) d( f,)
+    f4. es8\trill d f16( a,) b8-! r
+    r d'\p r d r d r d
+    r d r c r f,16(\f b) b( d) d( f,) %5
+    f4. es8\trill d f16( a,) b8-! r
+    d' d d d c c f f
+    f f e e f c4 b8
+    r a\p r a r a r a
+    r a r g r a16(\f c) f,8 r %10
+    r2 c'4 f~
+    f es d4. c16 b
+    a4 f' g, e'
+    f8 r a r b r g r
+    c4. b8 a c,16( f) f( a) a( c,) %15
+    c4. b8 a c16( e,) f8 r
+    R1
+    r2 f16( f') f( es!) es( d) d( c)
+    c4 r r2
+    r f,16( f') f( es) es( des) des( c) %20
+    c4 f8\p a, \grace a b4 r
+    r g'8 h, \grace h c4 r
+    r f2\f b4
+    b2 f,16( f') f( es) es( d!) d( c)
+    d8-! r d-! r es-! r c-! r %25
+    f4. es16 d c4 a'
+    r8 f,16( b) b( d) d( f,) f4. es8\trill
+    d f16( a,) b4 \tempoSeyJesuB r2
+    R1
+    b'8-!\p r f-! r d4 r\fermata \bar "|." %30 finis
+  }
+}

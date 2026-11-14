@@ -170,3 +170,60 @@ EySoAltoLyrics = \lyricmode {
   dei -- nen %100
   Grim. %101 finis
 }
+
+SeyJesuAlto = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoSeyJesu
+    R1*6 %6
+    \mvTr b'4.\fE^\tutti b8 a4. f8
+    f4. e8 f4 r
+    \mvTr a4.\pE^\solo c16([ a)] \grace g f([ e)] f8 r4
+    \appoggiatura { g16[ a] } b8( a4) g8 \grace b a16([ g)] f8 r4 %10
+    \mvTr f\fE^\tutti b b a
+    g f f8 \once \stemUp b4( a16[ g])
+    f4 f f4. e8
+    f4 r r2
+    R1*2 %16
+    \mvTr a4.\pE^\solo^\aDue b8 a f16([ g)] a([ c)] b8
+    b4 a r2
+    a4. b8 a f16([ g)] a([ c)] b8
+    b4 a r2 %20
+    r r4 \mvTr f8\fE^\tutti f
+    g4 r r g8 g
+    a4 f8 f f4 g
+    g g f r
+    f f g f %25
+    f g f4. f8
+    f4 r r2
+    r \tempoSeyJesuB g4.\p b8
+    f4 f f4. f8
+    f4 r r2\fermata \bar "|." %30 finis
+  }
+}
+
+SeyJesuAltoLyrics = \lyricmode {
+  Herz, und waß du %7
+  unß ge -- ſchenkht,
+  dei -- ner Güt -- te
+  ü -- ber -- ge -- ben, %10
+  die den Him -- mel,
+  die den, die den __
+  Him -- mel ſelbſt be --
+  ſchränkht:
+
+  Schaf -- fe, daß wür ſchon auf %17
+  Er -- den
+  ſol -- cher Tem -- pel mö -- gen
+  wer -- den %20
+  der nur
+  dir, der nur
+  dir, der nur dir und
+  nicht der Welt
+  e -- wig Liecht und %25
+  Feu -- er, Feu -- er
+  hält,
+  e -- wig
+  Liecht und Feu -- er
+  hält. %30 finis
+}

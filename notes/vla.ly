@@ -289,3 +289,40 @@ NeigeDichViola = {
     R2.\fermata \markDaCapo \bar "||" %83 finis
   }
 }
+
+SeyJesuViola = {
+  \relative c' {
+    \clef alto
+    \key b \major \time 4/4 \tempoSeyJesu
+    d8\fE c b a g' es f a
+    b f f a b4 r
+    r8 f f f f4 r
+    f8\p r f r g r f r
+    g r f r f4 r %5
+    r8 f\fE f f f4 r
+    f8 f g g f f d^\critnote c
+    d d c c c4 r
+    c8\p r c r d r c r
+    d r c r c4 r %10
+    d8\fE c d b f' g a f
+    g g f f f f g g
+    f f f f f f c c
+    c r c r d r c r
+    c f c c c4 r %15
+    r8 c c c c4 r
+    f,8\p f f f f4 r
+    r2 f8\fE f f f
+    f4 r r2
+    r f8 f f f %20
+    f4 r r f'8 f
+    g4 r r g8 g
+    a4 f8 f f4 g
+    g2 f4 r
+    b8 a g f es c f es %25
+    d d g g f f, f f
+    f4 r r8 f f f
+    f4 r r2
+    R1
+    f'8\p r f r f4 r\fermata \bar "|." %30 finis
+  }
+}

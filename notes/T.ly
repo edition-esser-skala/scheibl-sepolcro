@@ -154,3 +154,71 @@ NeigeDichTenoreLyrics = \lyricmode {
   bö -- ſer
   Luſt. %83 finis
 }
+
+NunLassTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoNunLass
+    r8 g c d16 es d8 d d g,
+    r d'16 f es[ d] c8 r4 c8 g
+    b! b b c \grace b a!4 r
+    r8 a d d16 a b8 d d g,
+    r c16 c c8 f,! r c'16 d es4 %5
+    r8 c16[ a] b f f8 r2
+    R1\fermata \bar "|." %7 finis
+  }
+}
+
+NunLassTenoreLyrics = \lyricmode {
+  Nun laß dich auch fer -- tig fin -- den,
+  an -- zu -- zün -- den dei -- nen
+  Weyh -- rauch vor dem Grab,
+  du mußt Ihm ja Opf -- fer ſchen -- ckhen,
+  mit Be -- den -- ckhen, waß du biſt %5
+  iſt ſei -- ne Gaab. %6 finis
+}
+
+SeyJesuTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key b \major \time 4/4 \autoBeamOff \tempoSeyJesu
+    R1*6 %6
+    \mvTr b4\fE^\tutti g a4. c8
+    d4 c c r
+    R1*3 %11
+    \mvTr b4\fE^\tuttiE c b4. c8
+    c4 b8([ d)] c4. c8
+    c4 r r2
+    R1*6 %20
+    r2 r4 \mvTr b8\fE^\tuttiE b
+    b4 r r c8 c
+    c4 b8 c b4 b
+    b b a r
+    b b c a %25
+    d4. c16([ b)] b4. a8
+    b4 r r2
+    r \tempoSeyJesuB b4\p b
+    a b b4. a8
+    b4 r r2\fermata \bar "|." %30 finis
+  }
+}
+
+SeyJesuTenoreLyrics = \lyricmode {
+  Herz, und waß du %7
+  unß ge -- ſchenkht,
+
+  die den, die den %12
+  Him -- mel ſelbſt be --
+  ſchränkht:
+
+  der nur %21
+  dir, der nur
+  dir, der nur dir und
+  nicht der Welt
+  e -- wig Liecht und %25
+  Feu -- er, Feu -- er
+  hält,
+  e -- wig
+  Liecht und Feu -- er
+  hält. %30 finis
+}

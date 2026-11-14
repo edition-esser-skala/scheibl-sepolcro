@@ -166,3 +166,64 @@ WannBeySopranoLyrics = \lyricmode {
   wah -- rer %85
   Gott. %86 finis
 }
+
+SeyJesuSoprano = {
+  \relative c' {
+    \clef treble
+    \key b \major \time 4/4 \autoBeamOff \tempoSeyJesu
+    R1*3
+    \mvTr d'4.\pE^\solo f16([ d)] \grace c b([ a)] b8 r4
+    \appoggiatura { c16[ d] } es8( d4) c8 \grace es d16([ c)] b8 r4 %5
+    R1
+    \mvTr d4.\fE^\tutti d8 c4 f
+    \grace a,8 g4.\trill g8 f4 r
+    R1*2 %10
+    r2 \mvTr c'4\fE^\tutti f
+    f es d4. c16([ b)]
+    a4 d \grace a8 g4. g8
+    f4 r r2
+    R1*2 %16
+    \mvTr c'4.\pE^\solo^\aDue d!8 c a16([ b)] c([ es)] d8
+    d4\trill c r2
+    c4. des8 c a16([ b)] c([ es)] des!8
+    des4\trill c r2 %20
+    r4 f8 a, \grace a b4 r
+    r g'8 h, \grace h c4 r
+    r \mvTr d8\fE^\tutti c d4 des
+    des4. c8 c4 r
+    d d es c %25
+    f4. es16([ d)] \grace d8 c4.\trill b8
+    b4 r r2
+    r \tempoSeyJesuB des4\p des
+    c des c4.\trill c8
+    b4 r r2\fermata \bar "|." %30 finis
+  }
+}
+
+SeyJesuSopranoLyrics = \lyricmode {
+  Sey, ô Je -- ſu! %4
+  Leib und Le -- ben, %5
+
+  Herz, und waß du
+  unß ge -- ſchenkht,
+
+  die den %11
+  Him -- mel, die den
+  Him -- mel ſelbſt be --
+  ſchränkht:
+
+  Schaf -- fe, daß wür ſchon auf %17
+  Er -- den
+  ſol -- cher Tem -- pel mö -- gen
+  wer -- den %20
+  der nur dir,
+  der nur dir,
+  der nur dir und
+  nicht der Welt
+  e -- wig Liecht und %25
+  Feu -- er, Feu -- er
+  hält,
+  e -- wig
+  Liecht und Feu -- er
+  hält. %30 finis
+}

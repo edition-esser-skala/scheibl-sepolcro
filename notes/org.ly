@@ -661,3 +661,98 @@ NeigeDichBassFigures = \figuremode {
   <5 4>2 \bc <[\t _+]>4
   r2. %83 finis
 }
+
+NunLassOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \tempoNunLass
+    c2 h~
+    h4 c e2~
+    e f
+    fis g
+    a~ a %5
+    f4 r r8 b es, f
+    b,1\fermata \bar "|." %7 finis
+  }
+}
+
+NunLassBassFigures = \figuremode {
+  r2 <6>
+  r q
+  <5-> <_!>
+  <[6]>1
+  <6[!]>2 <6 5> %5
+  <7>1
+  r %7 finis
+}
+
+SeyJesuOrgano = {
+  \relative c {
+    \clef bass
+    \key b \major \time 4/4 \tempoSeyJesu
+    \mvTr b'8\fE-\solo a g f es c f es
+    d b a f b4 r
+    r8 f' f f, b4 r
+    b'8\p r a r g r d r
+    es r f r b,4 r %5
+    r8 f\fE f f b4 r
+    b'8-\tutti b e, e f e d a
+    b g c c, f4 r
+    \mvTr f'8\p-\solo r e r d r a r
+    b r c r f, r f'\fE es %10
+    d-\tutti c d b f' g a f
+    g g a a b b e, e
+    f f b, b c c c c
+    f-\solo e d c b g c b
+    a f' e c f4 r %15
+    r8 c c c f, f' c a
+    f-!\p f-! f-! f-! f-! f-! f-! f-!
+    f2 r
+    f8-! f-! f-! f-! f-! f-! f-! f-!
+    f2 r %20
+    r r4 \mvTr d'!8\fE-\tutti b
+    es!4 r r e8 c
+    f4 b8 a b a g f
+    e e e e f4 r
+    b8 a g f es c f es %25
+    d d es es f f f, f
+    b4 r r8 f f f
+    b4 r \tempoSeyJesuB \mvTr e2\p-\senzaOrg
+    f4 b, f'2
+    b,8\pp b b b b4 r\fermata \bar "|." %33 finis
+
+  }
+}
+
+SeyJesuBassFigures = \figuremode {
+  <5>4. \once \bassFigureExtendersOn q8 <6>2
+  q4 <6 4>8 <7> r2
+  r8 <8 6>4 <7>8 r2
+  <5>2. \once \bassFigureExtendersOn q4
+  <6> <6 4>8 <[5] 3> r2 %5
+  r8 <8 6>4 <7>8 r2
+  r4 <7> <5>8 <\t> <5> <6>
+  <6 5>4 <4>8 <_!> r2
+  <5>2. \once \bassFigureExtendersOn q4
+  <6 5> <6 4>8 <[5] _!>2 <2>8 %10
+  <6>2 <4>4 <6>
+  <7> <6 5>2 <7 5>8 <6 4>16 <5 3>
+  r4 <6 5> <4> <_!>
+  <_!>4. \once \bassFigureExtendersOn q8 <6 5>4 <_!>
+  <[6]> <6 4>8 <7 _!> r2 %15
+  r8 <8 6 _!>4 <7 [5]>8 r2
+  r1
+  r
+  r
+  r %20
+  r2. <6>4
+  r2. <6 5>4
+  r4. <6>8 <5> <\t> <5-> <\t>
+  <7->4. \once \bassFigureExtendersOn q8 <_!>2
+  <_!>4. \once \bassFigureExtendersOn q8 <6>2 %25
+  q4 <6 5> <4> <3>
+  r2 r8 <8 6>4 <7>8
+  r2 <7->
+  <_!>4 <_-> <4> <3>
+  <_!>2 \once \bassFigureExtendersOn q %30 finis
+}

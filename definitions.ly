@@ -1,7 +1,7 @@
 \version "2.26.0"
 
 #(define option-movement-title-format "number-title")
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly" %v2026.11.0
 \include "definitions_dynamics.ly"
 \include "ees_articulate.ly"
@@ -13,6 +13,9 @@ tempoDerTodt = \tempoMarkup "Recitativo"
 tempoEySo = \tempoMarkup "Moderato"
 tempoDuFängst = \tempoMarkup "Recitativo"
 tempoNeigeDich = \tempoMarkup "Moderato"
+tempoNunLass = \tempoMarkup "Recitativo"
+tempoSeyJesu = \tempoMarkup "Adagio"
+  tempoSeyJesuB = \tempoMarkup "Adagiosissime"
 
 
 \include "notes/vl1.ly"
