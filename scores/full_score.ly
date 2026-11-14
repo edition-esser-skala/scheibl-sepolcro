@@ -95,7 +95,6 @@
   %     system-system-spacing.basic-distance = #20
   %     system-system-spacing.minimum-distance = #20
   %     systems-per-page = #3
-  %     indent = 3\cm
   %   }
   %   \score { %\articulate
   %     <<
@@ -119,8 +118,91 @@
   %     \midi { \tempo 4 = 90 }
   %   }
   % }
+  % \bookpart {
+  %   \section "4" "Aria · Ey ſo ſchlaff nach deinen Plagen"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     system-system-spacing.basic-distance = #17
+  %     system-system-spacing.minimum-distance = #17
+  %     systems-per-page = #3
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+  %         \new GrandStaff \with { \setGroupDistance #11 #11 } <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \EySoViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \EySoViolinoII
+  %           }
+  %         >>
+  %         \new Staff {
+  %           \set Staff.instrumentName = "vla"
+  %           \EySoViola
+  %         }
+  %       >>
+  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \EySoAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \EySoAltoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \EySoOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \EySoBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 80 }
+  %   }
+  % }
+  % \bookpart {
+  %   \section "5" "Recitativo · Du fängſt, ich merkh es wohl"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #3
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \DuFängstTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \DuFängstTenoreLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DuFängstOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DuFängstBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \section "4" "Aria · Ey ſo ſchlaff nach deinen Plagen"
+    \section "6" "Aria · Neige dich zu meinen Bitten"
     \addTocEntry
     \paper {
       top-system-spacing.basic-distance = #10
@@ -140,35 +222,35 @@
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \EySoViolinoI
+              \NeigeDichViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \EySoViolinoII
+              \NeigeDichViolinoII
             }
           >>
           \new Staff {
             \set Staff.instrumentName = "vla"
-            \EySoViola
+            \NeigeDichViola
           }
         >>
         \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
           \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \EySoAlto }
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \NeigeDichTenore }
           }
-          \new Lyrics \lyricsto Alto \EySoAltoLyrics
+          \new Lyrics \lyricsto Tenore \NeigeDichTenoreLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \EySoOrgano
+            \NeigeDichOrgano
           }
         >>
-        \new FiguredBass { \EySoBassFigures }
+        \new FiguredBass { \NeigeDichBassFigures }
       >>
-      \layout { }
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/8) }
       \midi { \tempo 4 = 80 }
     }
   }

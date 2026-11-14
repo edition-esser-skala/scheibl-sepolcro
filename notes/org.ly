@@ -457,3 +457,207 @@ EySoBassFigures = \figuremode {
   <5! 4>4 \bc <[\t _+]> %100
   r2 %101 finis
 }
+
+DuFängstOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoDuFängst
+    e2~ e
+    f1
+    fis2 g
+    f es!~
+    es d~ %5
+    d es
+    d c
+    c r4 d
+    g,1\fermata \bar "|." %9 finis
+  }
+}
+
+DuFängstBassFigures = \figuremode {
+  <6>2 <6 5>
+  r1
+  <6 5>
+  <4! 2>2 <6>
+  <[2]> <6> %5
+  <6 5->1
+  <6!>
+  <4\+ 2>2. <_+>4
+  r1 %9 finis
+}
+
+NeigeDichOrgano = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 3/4 \tempoNeigeDich
+    c8\fE c c c c c
+    h h h h h h
+    c4 f, g
+    c2 r4
+    c'8 c c c c c %5
+    h h h h h h
+    c4 h c
+    g g, r
+    es' es es
+    d d d %10
+    es2 r4
+    R2.
+    as8\p as as as as as
+    g\f as b4 b,
+    es b' b, %15
+    es b' b,
+    es g8\p f es d
+    c c c c c c
+    h h h h h h
+    c4 f, g %20
+    c2 r4
+    r8 c c c c c
+    r h h h h h
+    c4 h c
+    g' g, r %25
+    es' es es
+    d d d
+    es2 r4
+    R2.
+    as8 as as as as as %30
+    g as b4 b,
+    es r b
+    es r b
+    es\f es es
+    r d b %35
+    es es es
+    as b b,
+    es2 r4
+    e\pE e e
+    f f f %40
+    e2 c4
+    f2 es4
+    d d d
+    es es es
+    d2 b4 %45
+    es4. f8 es d
+    c4 c' b
+    r as g
+    r fis fis
+    g g, a! %50
+    h r g'
+    fis g r
+    R2.
+    f!8 f f f f f
+    es4 g g, %55
+    c r r
+    r g h
+    c g h
+    c r r
+    c8 c c c c c %60
+    c c c c c c
+    f4 g g,
+    c r r
+    r8 f\f f f f f
+    es es h h h h %65
+    c f g4 g,
+    c g' g,
+    c-! c-! c-!
+    c2.\fermataFine
+    es4\p f b, %70
+    es d r
+    d es g
+    d es a,!
+    b b'8 as g f
+    e4 r r %75
+    f c'8 b a! g
+    fis4 r r
+    g8 g f f f f
+    es! es c c c c
+    d4 r c %80
+    b es cis
+    d2.\fermata
+    g,\fermata \markDaCapo \bar "||" %83 finis
+  }
+}
+
+NeigeDichBassFigures = \figuremode {
+  r2.
+  <6>
+  r4 <6 5 [_-]> <4>8 <_!>
+  r2.
+  r %5
+  <7->
+  r4 <6 5>2
+  <6 4>4 <5 _!>2
+  <[5-]>2.
+  <6>2 <6 5->4 %10
+  r2.
+  r
+  <6 5>
+  <6>8 q <6 4>4 <[5] 3>
+  r <6 4> <[5] 3> %15
+  r2 <[7-]>4
+  r2.
+  r
+  <6>
+  r4 <[6 _-]> <6 4>8 <5 _!> %20
+  r2.
+  r
+  r8 <7-> r2
+  r4 <6 5>2
+  <6 4>4 <5 _!>2 %25
+  <[5-]>2.
+  <6 5->
+  r
+  r
+  <6 5> %30
+  <6>8 <[6]> <6 4>4 <[5] 3>
+  r2 <7[-]>4
+  r2 q4
+  r2.
+  r4 <6 5->2 %35
+  r2.
+  <6 5>4 <6 4> <[7-] 3>
+  r2.
+  <6 5>
+  <_-> %40
+  <6>2 <6- 4>8 <[5] _!>
+  <[_-]>2.
+  <6 5->
+  r
+  <5[-]>2 <6 4>8 <[5] 3> %45
+  r2.
+  r2 <\t>4
+  r q2
+  r4 <7 [_!]>2
+  <_!>2 <7>4 %50
+  <6>2 <6 4>8 <[5] _!>
+  <7>4 <_!>2
+  r2.
+  <6 4! _->
+  <6>4 <4> <_!> %55
+  r2.
+  r4 <7 [_!]> <\t>
+  r <7 [_!]>2
+  r2.
+  r %60
+  <6- 4>4 <[5] 3>2
+  <6 5 _->4 <4> <_!>
+  r2.
+  r8 <_-> <6 4! _->2
+  <6>4 <6 5>2 %65
+  r8 <6 5 _-> <4>4 <_!>
+  r <6 4> <[5] _!>
+  r2.
+  r
+  r4 <7 [_-]> <7-> %70
+  r <6>2
+  <6 5->2.
+  <[6 5-]>2 <7>4
+  r2.
+  <6 5> %75
+  <_->4 <\t> <6\\>
+  <7>2.
+  r4 <4! 2>2
+  <6> <6 5>4
+  <_+>2 <[4\+] 2>4 %80
+  <6>2 \bo <[7 _!]>4
+  <5 4>2 \bc <[\t _+]>4
+  r2. %83 finis
+}

@@ -200,3 +200,92 @@ EySoViolinoI = {
     R\fermata \markDaCapo \bar "||" %101 finis
   }
 }
+
+NeigeDichViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \tempoNeigeDich
+    c'8.\fE g16 g2
+    d'8. g,16 g2
+    es'8( c) f( d) \grace d16 c8( h)
+    \grace h c4 c, r
+    g'8 g g g g g %5
+    as as as as as as
+    g( g') g( f) f( es)
+    es4\trill d r
+    es8( b!) r b( g b)
+    f'( b,) r \once \slurDashed b( f as) %10
+    g8. as16 b4 r
+    b8\p b b b b( h)
+    c2~ c8 d
+    es8.\f as,16 g4 f\trill
+    es4. g16 f f8.( g32 as) %15
+    g4. g16( es) d8.( es32 f)
+    es4 r r
+    g8\p g g g g g
+    g g g g g g
+    es'( c) f( d) \grace d16 c8( h) %20
+    \grace h c4 c, r
+    es16( g es g) es( g es g) es( g es g)
+    f( as f as) f( as f as) f( as f as)
+    \once \slurDashed g8( g') g( f) f( es)
+    es4\trill d r %25
+    es16( g es g) es( g es g) es( g es g)
+    b,( f' b, f') b,( f' b, f') b,( f' b, f')
+    es8. f16 g4 r
+    b,8 b b b b( h)
+    c c c c c d %30
+    es8. as16 \once \slurDashed g4( f)
+    es4. g,16 f f8.( g32 as)
+    g4. \once \slurDashed g16( es) d8.( es32 f)
+    es4\f g8( b) es( g)
+    f8. b,16 b2\trill %35
+    g'8-! es-! b-! g-! es-! des'-!
+    c as16( f) es4 f\trill
+    es8 b <es g,>4 r
+    b'8\p b b b b b
+    as as as as as as %40
+    g8.( des'16) c8( b) \grace b16 as8( g)
+    \grace g as4 f r
+    as8 as as as as as
+    g g g g g g
+    f8.( c'16) b8( as) \grace as16 g8( f) %45
+    \grace f g4 es r
+    es16( c' es, c') es,( c' es, c') es,( c' es, c')
+    es,( c' es, c') es,( c' es, c') es,( c' es, c')
+    es,( c' es, c') es,( c' es, c') es,( c' es, c')
+    \grace c8 h2 r4 %50
+    d4. f8( es d)
+    \grace d es4 d r
+    c8 c c c c c
+    d d d d d d
+    c2 h4 %55
+    c r r
+    r8 g, f'(-. f-. f-. f-.)
+    es( g) r f(-. f-. f-.)
+    es( g) c([ es d f)]
+    es2. %60
+    f4-! es2
+    R2.
+    r4 g8(\f es) c( g)
+    as4 h2
+    c4 d2 %65
+    es16( g f as) c,4 h
+    c r8 es,16( d) d8.( es32 f)
+    es4 r8 as( g d)
+    \grace d c2.\fermataFine
+    es'2\p d4 %70
+    es f r
+    f es2
+    f4 es2
+    d4 r r
+    b r r %75
+    r c c
+    c r r
+    r d2
+    es r4
+    R2.*2 %81
+    R2.\fermata
+    R\fermata \markDaCapo \bar "||" %83 finis
+  }
+}

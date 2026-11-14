@@ -9,8 +9,10 @@
 
 tempoOWunder = \tempoMarkup "Recitativo"
 tempoWannBey = \tempoMarkup "Moderato"
-tempoDerTodt = \tempoMarkup "Moderato"
+tempoDerTodt = \tempoMarkup "Recitativo"
 tempoEySo = \tempoMarkup "Moderato"
+tempoDuFängst = \tempoMarkup "Recitativo"
+tempoNeigeDich = \tempoMarkup "Moderato"
 
 
 \include "notes/vl1.ly"

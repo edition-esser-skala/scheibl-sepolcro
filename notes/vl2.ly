@@ -200,3 +200,92 @@ EySoViolinoII = {
     R\fermata \markDaCapo \bar "||" %101 finis
   }
 }
+
+NeigeDichViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 3/4 \tempoNeigeDich
+    c16(\fE es c es) c( es c es) c( es c es)
+    g,( d' g, d') g,( d' g, d') g,( d' g, d')
+    c4 f'8( d) \grace d16 c8( h)
+    \grace h8 c4 c, r
+    c16( es c es) c( es c es) c( es c es) %5
+    d( f d f) d( f d f) d( f d f)
+    \once \slurDashed es8( es') es( d) d( c)
+    c4\trill h r
+    es,16( g es g) es( g es g) es( g es g)
+    b,( f' b, f') b,( f' b, f') b,( f' b, f') %10
+    es8. f16 g4 r
+    g8\p g g g g g~
+    g f f f f f
+    g8.\f f16 es4 d
+    es4. es16 d d8.( es32 f) %15
+    es4. es16( g,) as4
+    g r r
+    c16(\p es c es) c( es c es) c( es c es)
+    g,( d' g, d') g,( d' g, d') g,( d' g, d')
+    c4 f'8( d) \grace d16 c8( h) %20
+    \grace h c4 c, r
+    c16( es c es) c( es c es)  c( es c es)
+    d( f d f) d( f d f) d( f d f)
+    es8( es') es( d) d( c)
+    c4\trill h r %25
+    g16( es' g, es') g,( es' g, es')  g,( es' g, es')
+    f8 as, as as as as
+    g8. as16 b4 r
+    g8 g g g g g~
+    g f f f f f %30
+    g8. f'16 es4( d)
+    es4. es,16 d \once \slurDashed d8.( es32 f)
+    es4. es16( g,) as4
+    g16(\f es' g, es') g,( es' g, es') g,( es' g, es')
+    d( as' d, as') d,( as' d, as') d,( as' d, as') %35
+    b,( g' b, g') b,( g' b, g') b,( g' b, g')
+    as8 c b es, b16( d b d)
+    es8 b <es g,>4 r
+    c16(\p g' c, g') c,( g' c, g') c,( g' c, g')
+    c,( f c f) c( f c f) c( f c f) %40
+    \once \slurDashed c8.( b'16) as8( g) \grace g16 f8( e)
+    \grace e8 f2 r4
+    b,16( f' b, f') b,( f' b, f') b,( f' b, f')
+    b,( es b es) b( es b es) b( es b es)
+    \slurDashed b8.( as'16) g8( f) \slurSolid \grace f16 es8( d) %45
+    \grace d es2 r4
+    c16( es c es) c( es c es) c( es c es)
+    c( es c es) c( es c es) c( es c es)
+    c( es c es) c( es c es) c( es c es)
+    \grace es8 d2 r4 %50
+    g4. d'8( c h)
+    \grace h c4 h r
+    as8 as as as as as
+    as as as as as as
+    g4 d2 %55
+    c4 r r
+    r8 g d'(-. d-. d-. d-.)
+    c( es) r d(-. d-. d-.)
+    c( es) r4 r
+    g8 g g g g g %60
+    as4 g8 g g4
+    R2.
+    r8 g-!\f g-! g-! g-! g~
+    g f d16( as' d, as') d,( as' d, as')
+    g8 es16( c) g( f' g, f') g,( f' g, f') %65
+    es8 d d2
+    c4-\critnote r8 c16( h) h8.( c32 d)
+    c4 r8 f( es h)
+    \grace h c2.\fermataFine
+    g'4\p as2 %70
+    g4 b r
+    b8 b b b b b
+    b b b g g g
+    f4 r r
+    g r r %75
+    r f f8 g
+    a!4 r r
+    r g2~
+    g r4
+    R2.*2 %81
+    R2.\fermata
+    R\fermata \markDaCapo \bar "||" %83 finis
+  }
+}

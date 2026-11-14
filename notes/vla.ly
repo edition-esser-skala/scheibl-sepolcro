@@ -200,3 +200,92 @@ EySoViola = {
     R2\fermata \markDaCapo \bar "||" %101 finis
   }
 }
+
+NeigeDichViola = {
+  \relative c' {
+    \clef alto
+    \key c \dorian \time 3/4 \tempoNeigeDich
+    c8\fE c c c c c
+    d d d d d d
+    g4 as d,
+    es2 r4
+    es8 es es es es es %5
+    f f f f d d
+    c4 g' g
+    g g, r
+    b! b b
+    b b b %10
+    b2 r4
+    R2.
+    es8\p es es es c c
+    b\f c b4 b
+    b b2 %15
+    b4 b2
+    b4 r r
+    c8\p c c c c c
+    d d d d d d
+    g4 as d, %20
+    g,2 r4
+    r8 c c c c c
+    r d d d d d
+    c4 g g
+    g g r %25
+    b! b b
+    b b b
+    b2 r4
+    R2.
+    es8 es es es c c %30
+    b c b4 b
+    b r b
+    b r b
+    b\f b b
+    b2. %35
+    b4 b b
+    as b as
+    g2 r4
+    c\p c c
+    c c c %40
+    c2.
+    c2 r4
+    b2 b4
+    b b b
+    b2. %45
+    b4. f'8 es d
+    c4 c' b
+    r as g
+    r fis fis
+    g2 r4 %50
+    r g g
+    fis( g) r
+    R2.
+    f!8 f f f f f
+    g4 g2 %55
+    g4 r r
+    r g,2
+    g4 g2
+    g4 r r
+    c c c %60
+    c c c
+    R2.
+    r4 es8\f es es es
+    f4 d8 d d d
+    es4 g8 g g g %65
+    g, as g4 g
+    g2 g4
+    g c c
+    c2.\fermataFine
+    b'4\p as f %70
+    b, b r
+    as' g2
+    as4 g2
+    b,4 r r
+    c r r %75
+    f r r
+    es^\critnote r r
+    g h,2
+    c4 r r
+    R2.*2 %81
+    R2.\fermata
+    R2.\fermata \markDaCapo \bar "||" %83 finis
+  }
+}
